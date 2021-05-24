@@ -40,6 +40,7 @@ if ( post_password_required() ) {
 	 * @hooked woocommerce_show_product_sale_flash - 10
 	 * @hooked woocommerce_show_product_images - 20
 	 */
+	echo '<p class="stock in-stock">Sản phẩm còn lại: '.$product->get_stock_quantity().'</p>';
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
 

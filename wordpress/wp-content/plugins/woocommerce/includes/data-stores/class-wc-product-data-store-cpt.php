@@ -1346,7 +1346,7 @@ class WC_Product_Data_Store_CPT extends WC_Data_Store_WP implements WC_Object_Da
 	 */
 	protected function set_product_stock( $product_id_with_stock, $stock_quantity ) {
 		global $wpdb;
-
+			
 		// Generate SQL.
 		$sql = $wpdb->prepare(
 			"UPDATE {$wpdb->postmeta} SET meta_value = %f WHERE post_id = %d AND meta_key='_stock'",
